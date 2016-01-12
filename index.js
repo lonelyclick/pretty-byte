@@ -19,8 +19,8 @@ module.exports = function (num) {
 		return (neg ? '-' : '') + num + ' B';
 	}
 
-	exponent = Math.min(Math.floor(Math.log(num) / Math.log(1000)), units.length - 1);
-	num = Number((num / Math.pow(1000, exponent)).toFixed(2));
+	exponent = Math.min(Math.floor(Math.log(num) / Math.log(1024)), units.length - 1);
+	num = Number((num / Math.pow(1024, exponent)).toFixed(2));
 	unit = units[exponent];
 
 	return (neg ? '-' : '') + num + ' ' + unit;

@@ -1,19 +1,16 @@
 {
-  "name": "pretty-bytes",
-  "version": "3.0.0",
-  "description": "Convert bytes to a human readable string: 1337 → 1.34 kB",
+  "name": "pretty-byte",
+  "version": "1.0.0",
+  "description": "Convert bytes to a human readable string: 1337 → 1.31 kB",
   "license": "MIT",
-  "repository": "sindresorhus/pretty-bytes",
+  "repository": "lonelyclick/pretty-byte",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "LonelyClick",
+    "email": "lonelyclick@163.com",
+    "url": "nicefe.com"
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -33,9 +30,5 @@
   ],
   "dependencies": {
     "number-is-nan": "^1.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
   }
 }

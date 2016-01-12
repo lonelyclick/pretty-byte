@@ -1,40 +1,32 @@
-# pretty-bytes [![Build Status](https://travis-ci.org/sindresorhus/pretty-bytes.svg?branch=master)](https://travis-ci.org/sindresorhus/pretty-bytes)
+# Fork by [pretty-bytes](https://github.com/sindresorhus/pretty-bytes) diff 1024
 
-> Convert bytes to a human readable string: `1337` → `1.34 kB`
+> Convert bytes to a human readable string: `1337` → `1.31 kB`
 
 Useful for displaying file sizes for humans.
 
--
-
-*Note that it uses base-10 (eg. kilobyte).  
+*Note that it uses base-1024 (eg. kibibyte).  
 [Read about the difference between kilobyte and kibibyte.](http://pacoup.com/2009/05/26/kb-kb-kib-whats-up-with-that/)*
 
 
 ## Install
 
 ```
-$ npm install --save pretty-bytes
+$ npm install --save pretty-byte
 ```
 
 
 ## Usage
 
 ```js
-const prettyBytes = require('pretty-bytes');
+const prettyByte = require('pretty-byte');
 
-prettyBytes(1337);
-//=> '1.34 kB'
+prettyByte(1337);
+//=> '1.31 kB'
 
-prettyBytes(100);
+prettyByte(100);
 //=> '100 B'
 ```
 
-
-## Related
-
-- [pretty-bytes-cli](https://github.com/sindresorhus/pretty-bytes-cli) - CLI for this module
-
-
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT
